@@ -10,7 +10,7 @@ jobs:
 
       steps:
         - name: Checkout repository
-          uses: actions/checkout@2
+          uses: actions/checkout@v2
 
         - name: Set up python 3.10
           uses: actions/setup-python@v2
