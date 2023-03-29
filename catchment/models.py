@@ -11,8 +11,8 @@ import pandas as pd
 
 def data_normalise(data):
     """Normalise any given 2D data array"""
-    max = np.array(np.max(data, axis=1))
-    return data / max[np.newaxis, :]
+    max_array = np.array(np.max(data, axis=0))
+    return data / max_array[np.newaxis, :]
 
 def read_variable_from_csv(filename):
     """Reads a named variable from a CSV file, and returns a
